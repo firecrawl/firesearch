@@ -9,8 +9,23 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Firecrawl",
-  description: "A Firecrawl template",
+  title: "Mercury Research - AI-Powered Financial Research Platform",
+  description:
+    "AI-powered deep research platform for Investment Advisors, Financial Analysts, and Portfolio Managers. Get comprehensive financial insights with institutional-grade analysis.",
+  keywords:
+    "financial research, investment analysis, wealth management, portfolio management, AI research, financial advisors",
+  openGraph: {
+    title: "Mercury Research - AI-Powered Financial Research",
+    description:
+      "AI-powered deep research platform for Investment Advisors, Financial Analysts, and Portfolio Managers.",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Mercury Research - AI-Powered Financial Research",
+    description:
+      "AI-powered deep research platform for Investment Advisors, Financial Analysts, and Portfolio Managers.",
+  },
 };
 
 export default function RootLayout({
@@ -27,9 +42,7 @@ export default function RootLayout({
           inter.variable
         )}
       >
-        <main className="">
-          {children}
-        </main>
+        <main className="">{children}</main>
       </body>
     </html>
   );
