@@ -1,4 +1,3 @@
-import ShinyText from "@/components/ShinyText";
 import { Chat } from "./chat";
 import Image from "next/image";
 
