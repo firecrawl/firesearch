@@ -798,7 +798,7 @@ export class LangGraphSearchEngine {
           eventCallback({
             type: 'final-result',
             content: state.finalAnswer || '',
-            sources: state.sources || [],
+            sources: state.processedSources || state.sources || [],
             followUpQuestions: state.followUpQuestions
           });
         }
